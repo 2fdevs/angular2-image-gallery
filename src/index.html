@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://jspm.io/system@0.16.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-alpha.20/angular2.js"></script>
+</head>
+<body>
+    <application></application>
+</body>
+
+<!-- Application bootstrap logic -->
+<script>
+    System.config({
+        paths: {
+            '*': '*.js',
+            'angular2/*': 'angular2/*'
+        }
+    });
+    System.import('application');
+</script>
+</html>

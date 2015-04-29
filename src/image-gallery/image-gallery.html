@@ -1,0 +1,12 @@
+<style>@import 'styles/image-gallery.css';</style>
+
+<section class="control-bar">
+    <button type="button" class="prev" (click)="onClickPrev()">PREV</button>
+    <div class="image-counter">{{(currentImage + 1) + "/" + totalImages}}</div>
+    <button type="button" class="next" (click)="onClickNext()">NEXT</button>
+</section>
+
+<section [style.width]="containerStyle.width" [style.left]="containerStyle.left" class="image-container">
+    <content></content>
+</section>
+
